@@ -6,6 +6,18 @@
     <title>BookMyEvents | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        :root { --bms-red: #F84464; --bms-dark: #333545; }
+        .bg-bms-dark { background-color: var(--bms-dark); }
+        .bg-bms-light { background-color: #222539; }
+        .text-bms-red { color: var(--bms-red); }
+        .btn-bms-red { background-color: var(--bms-red); color: white; border: none; transition: 0.3s; }
+        .btn-bms-red:hover { background-color: #e03c58; color: white; }
+        .movie-card { transition: transform 0.3s; cursor: pointer; border-radius: 12px; overflow: hidden; }
+        .movie-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .secondary-nav a { text-decoration: none; color: #ccc; font-size: 0.9rem; margin-right: 20px; }
+        .secondary-nav a:hover { color: white; }
+    </style>
 </head>
 <body class="bg-light d-flex flex-column min-vh-100">
 
