@@ -20,5 +20,61 @@
         </div>
     </nav>
     
+    <div class="container mb-5 flex-grow-1">
+        <div class="row">
+            <aside class="col-md-3 mb-4">
+                <h4 class="fw-bold mb-3">Filters</h4>
+                <div class="bg-white p-4 filter-section shadow-sm mb-3">
+                    <h6 class="fw-bold text-danger mb-3">Languages</h6>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="langEnglish"> 
+                        <label class="form-check-label" for="langEnglish">English</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="langHindi"> 
+                        <label class="form-check-label" for="langHindi">Hindi</label>
+                    </div>
+                    <hr>
+                    <h6 class="fw-bold text-danger mb-3">Genres</h6>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="genreAction"> 
+                        <label class="form-check-label" for="genreAction">Action</label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input type="checkbox" class="form-check-input" id="genreComedy"> 
+                        <label class="form-check-label" for="genreComedy">Comedy</label>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-md-9">
+                <h4 class="fw-bold mb-3">Movies in Delhi-NCR</h4>
+                <div class="row g-4">
+                    <div class="col-6 col-md-4">
+                        <a href="details.html?id=m1" class="text-decoration-none text-dark">
+                            <div class="card border-0 movie-card shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&q=80" class="card-img-top" alt="Sci-Fi Epic" />
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold mb-1">Sci-Fi Epic</h5>
+                                    <p class="card-text text-muted mb-0"><small>English • 2D, 3D</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a href="details.html?id=m3" class="text-decoration-none text-dark">
+                            <div class="card border-0 movie-card shadow-sm h-100">
+                                <img src="https://images.unsplash.com/photo-1460881680858-30d872d5b530?w=400&q=80" class="card-img-top" alt="The Great Heist" />
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold mb-1">The Great Heist</h5>
+                                    <p class="card-text text-muted mb-0"><small>Hindi • 2D</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
