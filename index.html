@@ -7,7 +7,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
-<body>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg bg-bms-dark navbar-dark py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">book<span class="text-bms-red">my</span>events</a>
+            <form class="d-none d-lg-flex flex-grow-1 mx-4">
+                <label for="movieSearch" class="visually-hidden">Search Movies</label>
+                <input type="text" id="movieSearch" class="form-control border-0 bg-white" placeholder="Search for Movies, Events, Plays and More" />
+            </form>
+            <div class="d-flex align-items-center gap-3">
+                <a href="login.html" class="btn btn-bms-red btn-sm px-4 fw-bold">Sign In</a>
+            </div>
+        </div>
+    </nav>
     
 </body>
 </html>
