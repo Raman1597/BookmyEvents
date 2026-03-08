@@ -16,5 +16,45 @@
         </div>
     </nav>
     
+    <div class="container mt-4">
+        <div class="row bg-white p-4 rounded-4 shadow-sm border mb-4">
+            <div class="col-md-3">
+                <img id="movie-poster" src="" class="img-fluid rounded-4 shadow" alt="Movie Poster">
+            </div>
+            <div class="col-md-9 mt-3 mt-md-0">
+                <h1 id="movie-title" class="fw-bold"></h1>
+                <p id="movie-meta" class="text-muted fs-5 mb-3"></p>
+                <hr>
+                <h5 class="fw-bold">About the Movie</h5>
+                <p id="movie-desc" class="text-secondary"></p>
+            </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-4 shadow-sm border mb-4">
+            <h5 class="fw-bold mb-4">Step 1: Select Showtime</h5>
+            <div class="d-flex flex-wrap gap-3" id="time-list">
+                <button type="button" class="time-slot btn bg-white" onclick="selectTime(this)">10:30 AM</button>
+                <button type="button" class="time-slot btn bg-white" onclick="selectTime(this)">01:45 PM</button>
+                <button type="button" class="time-slot btn bg-white" onclick="selectTime(this)">05:00 PM</button>
+                <button type="button" class="time-slot btn bg-white" onclick="selectTime(this)">09:30 PM</button>
+            </div>
+        </div>
+
+        <div id="seat-selection-area" class="d-none">
+            <div class="bg-white p-5 rounded-4 shadow-sm border text-center mb-5">
+                <h5 class="fw-bold text-start mb-5">Step 2: Choose Your Seats</h5>
+                <div class="screen mb-3"></div>
+                <p class="text-muted mb-5 small">All eyes this way</p>
+                
+                <div class="d-flex flex-column align-items-center mb-4">
+                    <div class="mb-2">
+                        <button class="seat" aria-label="Seat"></button><button class="seat" aria-label="Seat"></button><button class="seat sold" disabled aria-label="Sold Seat"></button>
+                        <button class="seat" aria-label="Seat"></button><button class="seat" aria-label="Seat"></button><button class="seat" aria-label="Seat"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
